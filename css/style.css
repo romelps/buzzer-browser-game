@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+.buzzer {
+    display: flex;
+    height: 60px;
+    width: 100px;
+    background-color: indigo;
+    border: 10px black;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    color: white;
+    /*margin: 10px; */
+   
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    
+}
+
+/*fun stuff when hovering over buzzer*/
+.buzzer:hover {
+  background-color: white;
+  color: purple;
+  border: 20px rgb(106, 21, 122);
+  /*first color is main color underneath button and second is the 'glow'*/
+  box-shadow: 0 10px 15px 0 black, 0 10px 20px 10px blueviolet;/*info found on w3 schools*/
+
+}
+
+h1 {
+    font-family: "Georgia", serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+} 
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/021/971/025/non_2x/green-soft-pastel-curtain-stage-award-background-trophy-on-green-carpet-pastel-background-generative-ai-free-photo.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+}
