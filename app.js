@@ -5,6 +5,16 @@ document.getElementById("actual-cookie").style.visibility='hidden'; //calls actu
 
 
 actualCookie.visibility = 'hidden';
+
+const timer = () => {
+    if(buzzer.clicked == true) {
+        alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
+    }
+    else {
+        alert('YOU LOSE! No cookie.');
+    }
+}
+
 buzzer.addEventListener("click", () => {
     cookie.textContent = "You get a cookie!";
     alert("You got a cookie! ");
@@ -12,3 +22,4 @@ buzzer.addEventListener("click", () => {
     document.getElementById("actual-cookie").style.visibility='visible'; //reveals cookie once buzzer is pushed.
 })
 
+setTimeout(timer, 5000);
