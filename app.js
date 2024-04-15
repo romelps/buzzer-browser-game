@@ -10,22 +10,26 @@ actualCookie.visibility = 'hidden';
 buzzer.clicked = false;
 
 
-buzzer.addEventListener("click", () => {
-    cookie.textContent = "You get a cookie!";
-    //alert("You got a cookie! ");
-    // reveal = "visible";
-    document.getElementById("actual-cookie").style.visibility='visible'; //reveals cookie once buzzer is pushed.
-})
+
 
 const timer = () => {
-    if(buzzer.clicked = true) {
-        alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
-    }
-    else {
+    // if(buzzer.clicked == true) {
+    //     alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
+    // }
+    // else {
         alert('YOU LOSE! No cookie.');
-    }
+    // }
 
 }
 
 
-setTimeout(timer, 5000);
+winLose = setTimeout(timer, 5000);
+
+buzzer.addEventListener("click", () => {
+    cookie.textContent = "You get a cookie!";
+    alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
+   
+    // reveal = "visible";
+    document.getElementById("actual-cookie").style.visibility='visible'; //reveals cookie once buzzer is pushed.
+    clearTimeout(winLose);
+})
