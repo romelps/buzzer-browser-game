@@ -17,7 +17,11 @@
     /*margin: 10px; */
     font-size: 24px;
     font-family: "Georgia", serif;
-  
+    position: relative;
+
+    /*W3 applying animation*/
+    animation-name: move;
+    animation-duration: 3s;
     
 }
 
@@ -29,6 +33,16 @@
   /*first color is main color underneath button and second is the 'glow'*/
   box-shadow: 0 10px 15px 0 black, 0 10px 20px 10px blueviolet;/*info found on w3 schools*/
   
+}
+
+/*animation code with help from w3 schools*/
+@keyframes move {
+  0% {left: 0px; top: 0px;}
+  25% {left: 200px; top: 0px;}
+  50% {left: -300px; top: -200px;}
+  75% {left: -500px; top: 500px;}
+  85% {left: 400px; top: -100px;}
+  100% {left: 0px; top: 0px;}
 }
 
 h1 {
@@ -85,4 +99,8 @@ div {
     box-shadow: 0 10px 15px 0 black, 0 10px 20px 10px rgb(5, 182, 99);/*info found on w3 schools*/
     
   }
+
+
 }
+
+
