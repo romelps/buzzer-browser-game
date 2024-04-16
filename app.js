@@ -6,8 +6,8 @@ document.getElementById("actual-cookie").style.visibility='hidden'; //calls actu
 // const buzzButton = document.getElementById(".buzzer");
 
 
-actualCookie.visibility = 'hidden';
-buzzer.clicked = false;
+actualCookie.visibility = 'hidden'; //cookie emoji starts off hidden
+
 
 
 
@@ -23,7 +23,7 @@ const timer = () => {
 }
 
 
-winLose = setTimeout(timer, 5000);
+winLose = setTimeout(timer, 5000); //calls the timer function after 5 seconds.
 
 buzzer.addEventListener("click", () => {
     cookie.textContent = "You get a cookie!";
@@ -31,5 +31,5 @@ buzzer.addEventListener("click", () => {
    
     // reveal = "visible";
     document.getElementById("actual-cookie").style.visibility='visible'; //reveals cookie once buzzer is pushed.
-    clearTimeout(winLose);
+    clearTimeout(winLose); //stops timer function when buzzer pushed.
 })

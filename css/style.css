@@ -36,6 +36,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     color: white;
+    text-shadow: 4px 4px 3px rgb(212, 11, 61); /*from W3. first num moves to right, sec num moves down, third blurs*/
 } 
 
 body {
