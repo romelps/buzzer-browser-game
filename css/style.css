@@ -21,8 +21,8 @@
 
     /*W3 applying animation*/
     animation-name: move;
-    animation-duration: 3s;
-    
+    animation-duration: 3.5s;
+    animation-delay: 1s;
 }
 
 /*fun stuff when hovering over buzzer*/
@@ -99,8 +99,6 @@ div {
     box-shadow: 0 10px 15px 0 black, 0 10px 20px 10px rgb(5, 182, 99);/*info found on w3 schools*/
     
   }
-
-
 }
 
 

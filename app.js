@@ -6,7 +6,7 @@ document.getElementById("actual-cookie").style.visibility='hidden'; //calls actu
 // const buzzButton = document.getElementById(".buzzer");
 
 
-actualCookie.visibility = 'hidden'; //cookie emoji starts off hidden
+//actualCookie.visibility = 'hidden'; //cookie emoji starts off hidden
 
 
 
@@ -17,17 +17,18 @@ const timer = () => {
     //     alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
     // }
     // else {
-        alert('YOU LOSE! No cookie.');
+       // alert('YOU LOSE! No cookie.');
     // }
-
+    cookie.textContent = 'YOU LOSE! No cookie.'
 }
 
 
 winLose = setTimeout(timer, 5000); //calls the timer function after 5 seconds.
 
+//events when buzzer is clicked.
 buzzer.addEventListener("click", () => {
-    cookie.textContent = "You get a cookie!";
-    alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
+    cookie.textContent = "YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie";
+    //alert('YOU CLICKED THE BUZZER IN TIME! YOU WIN! ... a cookie');
    
     // reveal = "visible";
     document.getElementById("actual-cookie").style.visibility='visible'; //reveals cookie once buzzer is pushed.
