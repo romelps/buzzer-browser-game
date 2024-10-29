@@ -1,7 +1,7 @@
  Buzzer game
 ![image](https://github.com/romelps/buzzer-browser-game/assets/164553052/e6aa0393-8a4a-466e-a537-00aab4b87831)
 
-You must hit the buzzer within 5 seconds to get a cookie or you lose. The buzzer moves around the screen so it's more difficult to push.
+You must hit the buzzer within 5 seconds to get a cookie or you lose. The buzzer moves around the screen so it's more difficult to press.
 file://wsl.localhost/Ubuntu/home/romel/code/ga/labs/buzzer-browser-game/index.html
 
 Languages used: HTML, JavaScript, CSS
